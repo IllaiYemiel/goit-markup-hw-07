@@ -21,35 +21,48 @@
     />
 
     <!-- Стилі -->
-    <link rel="stylesheet" href="./CSS/styles.css" />
+    <!-- <link rel="stylesheet" href="./CSS/styles.css" /> -->
+    <link rel="stylesheet" href="./CSS/main.min.css" />
   </head>
   <body>
     <!-- Шапка сайту -->
     <header class="header">
       <div class="container header-container">
-        <nav class="header-nav">
+        <nav class="novigation novigation--flex">
           <a href="./index.html" class="logo"> <span>Web</span>Studio </a>
-          <ul class="site-nav list">
-            <li class="item"><a class="link current" href="/index.html">Студія</a></li>
-            <li class="item"><a class="link" href="./portfolio.html">Портфоліо</a></li>
-            <li class="item"><a class="link" href="./contacts.html">Контакти</a></li>
+          <ul class="novigation__list list">
+            <li class="novigation__item">
+              <a class="novigation__link current" href="/index.html">Студія</a>
+            </li>
+            <li class="novigation__item">
+              <a class="novigation__link" href="./portfolio.html">Портфоліо</a>
+            </li>
+            <li class="novigation__item">
+              <a class="novigation__link" href="./contacts.html">Контакти</a>
+            </li>
           </ul>
         </nav>
 
-        <div class="auth-nav-flex">
-        <ul class="auth-nav list">
-          <li class="item">
-            <a class="link" href="mailto:info@devstudio.com"
-              ><svg class="auth-nav-icon" width="16px" height="12px">
-                <use href="./images/icons.svg/symbol-defs.svg#icon-envelope"></use></svg>info@devstudio.com</a>
-          </li>
-          <li class="item">
-            <a class="link" href="tel:+380961111111"
-              ><svg class="auth-nav-icon" width="16px" height="12px">
-                <use href="./images/icons.svg/symbol-defs.svg#icon-smartphone"></use></svg>+38 096 111 11 11</a>
-          </li>
-        </ul>
-      </div>
+        <div class="connaction">
+          <ul class="connaction__list connaction__list--flex list">
+            <li class="connaction__item">
+              <a class="connaction__link" href="mailto:info@devstudio.com"
+                ><svg class="connaction__icon" width="16px" height="12px">
+                  <use href="./images/icons.svg/symbol-defs.svg#icon-envelope"></use>
+                </svg>
+                info@devstudio.com
+              </a>
+            </li>
+            <li class="connaction__item">
+              <a class="connaction__link" href="tel:+380961111111">
+                <svg class="connaction__icon" width="16px" height="12px">
+                  <use href="./images/icons.svg/symbol-defs.svg#icon-smartphone"></use>
+                </svg>
+                +38 096 111 11 11</a
+              >
+            </li>
+          </ul>
+        </div>
       </div>
     </header>
 
@@ -59,7 +72,7 @@
       <section class="hero section overlay">
         <div class="container">
           <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
-          <button type="button" class="hero-btn" data-modal-open >Замовити послугу</button>
+          <button type="button" class="hero-btn" data-modal-open>Замовити послугу</button>
         </div>
       </section>
 
@@ -157,9 +170,7 @@
                   <li class="team-social-item">
                     <a href="" class="team-social-link">
                       <svg class="team-social-icon" width="20px" height="20px">
-                        <use
-                          href="./images/icons.svg/symbol-defs.svg#icon-instagram-two"
-                        ></use>
+                        <use href="./images/icons.svg/symbol-defs.svg#icon-instagram-two"></use>
                       </svg>
                     </a>
                   </li>
@@ -202,9 +213,7 @@
                   <li class="team-social-item">
                     <a href="" class="team-social-link">
                       <svg class="team-social-icon" width="20px" height="20px">
-                        <use
-                          href="./images/icons.svg/symbol-defs.svg#icon-instagram-two"
-                        ></use>
+                        <use href="./images/icons.svg/symbol-defs.svg#icon-instagram-two"></use>
                       </svg>
                     </a>
                   </li>
@@ -247,9 +256,7 @@
                   <li class="team-social-item">
                     <a href="" class="team-social-link">
                       <svg class="team-social-icon" width="20px" height="20px">
-                        <use
-                          href="./images/icons.svg/symbol-defs.svg#icon-instagram-two"
-                        ></use>
+                        <use href="./images/icons.svg/symbol-defs.svg#icon-instagram-two"></use>
                       </svg>
                     </a>
                   </li>
@@ -292,9 +299,7 @@
                   <li class="team-social-item">
                     <a href="" class="team-social-link">
                       <svg class="team-social-icon" width="20px" height="20px">
-                        <use
-                          href="./images/icons.svg/symbol-defs.svg#icon-instagram-two"
-                        ></use>
+                        <use href="./images/icons.svg/symbol-defs.svg#icon-instagram-two"></use>
                       </svg>
                     </a>
                   </li>
@@ -407,9 +412,7 @@
             <li class="social-item">
               <a href="" class="social-link">
                 <svg class="social-icon" width="20px" height="20px">
-                  <use
-                    href="./images/icons.svg/symbol-defs.svg#icon-instagram-two"
-                  ></use>
+                  <use href="./images/icons.svg/symbol-defs.svg#icon-instagram-two"></use>
                 </svg>
               </a>
             </li>
@@ -439,8 +442,9 @@
         <form class="newsletter-form">
           <label for="email-footer">Підпишіться на розсилку</label>
           <div class="newsletter-form-wrapper">
-            <input type="email" name="email-footer" id="email-footer" placeholder="E-mail">
-            <button type="submit" class="newsletter-form-btn">Підписатися
+            <input type="email" name="email-footer" id="email-footer" placeholder="E-mail" />
+            <button type="submit" class="newsletter-form-btn">
+              Підписатися
               <svg class="newsletter-form-icon" width="24">
                 <use href="./images/icons.svg/symbol-defs.svg#icon-icon-send"></use>
               </svg>
@@ -451,64 +455,68 @@
     </footer>
     <div data-modal class="backdrop is-hidden">
       <div class="modal">
-        <button class="modal-btn" data-modal-close>&times;
-        </button>
+        <button class="modal-btn" data-modal-close>&times;</button>
         <form class="form order-servise-form">
-          <b class="order-servise-title" >Залиште свої дані, ми вам передзвонимо</b>
+          <b class="order-servise-title">Залиште свої дані, ми вам передзвонимо</b>
           <div class="servise-form-field">
             <label class="order-servise-label" for="name">Ім'я</label>
             <div class="servise-form-wrapper">
-              <input type="text" name="name" id="name" required>
+              <input type="text" name="name" id="name" required />
               <svg class="icon-form" width="18" height="18">
-                <use href="./images/icons.svg/symbol-defs.svg#icon-person-black" ></use>
+                <use href="./images/icons.svg/symbol-defs.svg#icon-person-black"></use>
               </svg>
             </div>
           </div>
-  
+
           <div class="servise-form-field">
             <label class="order-servise-label" for="tel">Телефон</label>
             <div class="servise-form-wrapper">
-              <input type="tel" name="tel" id="tel" required>
+              <input type="tel" name="tel" id="tel" required />
               <svg class="icon-form" width="18" height="18">
-                <use href="./images/icons.svg/symbol-defs.svg#icon-phone-black" ></use>
+                <use href="./images/icons.svg/symbol-defs.svg#icon-phone-black"></use>
               </svg>
             </div>
           </div>
-  
+
           <div class="servise-form-field">
-            <label  class="order-servise-label" for="email">Пошта</label>
+            <label class="order-servise-label" for="email">Пошта</label>
             <div class="servise-form-wrapper">
-              <input type="email" name="email" id="email" required>
+              <input type="email" name="email" id="email" required />
               <svg class="icon-form" width="18" height="18">
-                <use href="./images/icons.svg/symbol-defs.svg#icon-email-black" ></use>
+                <use href="./images/icons.svg/symbol-defs.svg#icon-email-black"></use>
               </svg>
             </div>
           </div>
-         
+
           <div class="servise-form-field">
-            <label class="order-servise-label" for="comment" >Коментар</label>
+            <label class="order-servise-label" for="comment">Коментар</label>
             <textarea name="comment" id="comment" placeholder="Введіть текст"></textarea>
           </div>
-          
+
           <div class="servise-form-checkbox">
-            <input type="checkbox" name="policy" id="policy" required class="servise-form-check visually-hidden">
+            <input
+              type="checkbox"
+              name="policy"
+              id="policy"
+              required
+              class="servise-form-check visually-hidden"
+            />
             <label class="form-checkbox-label" for="policy">
               <span class="servise-checkbox-icon">
                 <svg class="icon-form-checkbox" width="16" height="16">
-                  <use href="./images/icons.svg/symbol-defs.svg#icon-sheck" ></use>
+                  <use href="./images/icons.svg/symbol-defs.svg#icon-sheck"></use>
                 </svg>
               </span>
-              Погоджуюся з розсилкою та приймаю <a href="" target="_blank"
-              rel="noreferrer">Умови договору</a>
+              Погоджуюся з розсилкою та приймаю
+              <a href="" target="_blank" rel="noreferrer">Умови договору</a>
             </label>
           </div>
 
           <div class="servise-form-btn">
-            <button class="form-btn" type="submit" >Відправити</button>
+            <button class="form-btn" type="submit">Відправити</button>
           </div>
         </form>
       </div>
-      
     </div>
     <script src="./js/modal.js"></script>
   </body>
