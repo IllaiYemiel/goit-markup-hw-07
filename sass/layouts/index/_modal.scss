@@ -25,7 +25,7 @@
     border-radius: 4px;
 }
 
-.modal-btn {
+.modal__btn-close {
     position: absolute;
     top: 8px;
     right: 8px;
@@ -45,7 +45,7 @@
 
 
 
-.order-servise-title {
+.order-servise__title {
     @include font(700, 20px, calc(23/20), null);
     display: block;
     margin-bottom: 12px;
@@ -56,7 +56,7 @@
     color: var(--primary-text-color);
 }
 
-.servise-form-field {
+.order-servise__form {
     display: flex;
     flex-direction: column;
     margin-bottom: 10px;
@@ -82,7 +82,7 @@
     }
 }
 
-.order-servise-label {
+.order-servise__label {
     @include font(null, 12px, calc(14/12), 0.01em);
     display: flex;
     margin-bottom: 4px;
@@ -92,11 +92,11 @@
     color: var(--second-text-color);
 }
 
-.servise-form-wrapper {
+.order-servise__wrapper {
     position: relative;
 }
 
-.icon-form {
+.order-servise__icon {
     position: absolute;
     top: 50%;
     left: 12px;
@@ -106,7 +106,7 @@
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.servise-form-field textarea {
+.order-servise__form textarea {
     padding: 12px 16px;
     height: 120px;
     border: 1px solid rgba(33, 33, 33, 0.2);
@@ -126,7 +126,7 @@
     }
 }
 
-.servise-form-checkbox {
+.order-servise__checkbox {
     @include flex(flex, center, center);
     flex-direction: row;
     margin-bottom: 30px;
@@ -134,22 +134,7 @@
     color: var(--second-text-color);
 }
 
-.servise-checkbox-icon {
-    @include flex(flex, center, center);
-    margin-right: 10px;
-    width: 16px;
-    height: 16px;
-    border: 2px solid var(--primary-text-color);
-    border-radius: 2px;
-    cursor: pointer;
-    & svg {
-        fill: transparent;
-    }
-}
-
-
-
-.servise-form-check:checked+label>span {
+.checkbox__check:checked+label>span {
     border: none;
     background-color: var(--accent-color);
     & svg {
@@ -157,21 +142,35 @@
         }
 }
 
-.form-checkbox-label {
+.checkbox__label {
     @include flex(flex, center, null);
 }
 
-.servise-form-checkbox a {
+.checkbox__icon-wrapper {
+    @include flex(flex, center, center);
+    margin-right: 10px;
+    width: 16px;
+    height: 16px;
+    border: 2px solid var(--primary-text-color);
+    border-radius: 2px;
+    cursor: pointer;
+
+    & svg {
+        fill: transparent;
+    }
+}
+
+.checkbox a {
     display: inline-block;
     color: var(--accent-color);
     margin-left: 4px;
 }
 
-.servise-form-btn {
+.modal-btn {
     text-align: center;
 }
 
-.form-btn {
+.modal-btn__form-btn {
     @include font(700, 16px, calc(30/16), 0.06em);
     padding: 10px 52px;
     margin: auto;

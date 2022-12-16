@@ -19,7 +19,7 @@
 
 }
 
-.hero-title {
+.hero__title {
     @include font(900, 44px, calc(60/44), 0.06em);
     width: 696px;
     margin: 0 auto 30px;
@@ -27,7 +27,7 @@
     color: var(--third-text-color);
 }
 
-.hero-btn {
+.hero__btn {
     @include font(null, 16px, calc(30/16), 0.06em);
     min-width: 216px;
     padding: 10px 32px;

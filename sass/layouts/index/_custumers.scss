@@ -1,4 +1,4 @@
-.custumers {
+.custumers__list {
     @include flex(flex, null, null);
     padding: 0;
     margin: 0;
@@ -6,7 +6,7 @@
     gap: 30px;
 }
 
-.custumers-link {
+.custumers__link {
     @include flex(flex, center, null);
     width: 170px;
     height: 92px;

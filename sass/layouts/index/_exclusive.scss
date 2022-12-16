@@ -1,15 +1,15 @@
-.exclusive-list {
+.exclusive__list {
     @include flex(flex, null, space-between);
     margin-top: 0;
     margin-bottom: 0;
     list-style: none;
 }
 
-.exclusive-item {
+.exclusive__item {
     width: 270px;
 }
 
-.container-exclusive-icon {
+.exclusive__container-icon {
     @include flex(inline-flex, center, center);
     margin-bottom: 30px;
     width: 270px;
@@ -20,13 +20,13 @@
 }
 
 
-.exclusive-title {
+.exclusive__title {
     @include font(null, 14px, calc(16/14), null);
     margin-top: 0;
     margin-bottom: 10px;
 }
 
-.exclusive-text {
+.exclusive__text {
     margin-top: 0;
     margin-bottom: 0;
     line-height: calc(24/14);

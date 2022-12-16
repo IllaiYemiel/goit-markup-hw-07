@@ -1,4 +1,4 @@
-.filter-list {
+.section__filter-list {
     @include flex(flex, null, center);
     margin-top: 0;
     margin-bottom: 50px;
@@ -7,7 +7,7 @@
 }
 
 
-.filter-btn {
+.filter-list__btn {
     @include font(500, 16px, calc(26/16), null);
     padding: 6px 22px;
     background-color: #F5F4FA;

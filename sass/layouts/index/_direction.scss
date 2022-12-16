@@ -9,14 +9,14 @@
     text-align: center;
 }
 
-.direction-list {
+.direction__list {
     @include flex(flex, null, space-between);
     position: relative;
     bottom: 0;
     list-style: none;
 }
 
-.direction-text {
+.direction__text {
     position: relative;
     & img {
     
@@ -24,7 +24,7 @@
         }
 }
 
-.direction-name {
+.direction__name {
     @include font(700, null, calc(16/14), null);
     position: absolute;
     bottom: 0;
