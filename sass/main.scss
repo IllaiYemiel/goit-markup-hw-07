@@ -1,3 +1,6 @@
+@import './utils/mixin';
+@import './utils/vars.scss';
+
 @import './base/reset';
 @import './base/common';
 @import './base/hidden';
@@ -5,8 +8,7 @@
 @import './components/container';
 @import './components/section';
 
-@import './utils/mixin';
-@import './utils/vars.scss';
+
 
 @import './layouts/header';
 @import './layouts/footer';
